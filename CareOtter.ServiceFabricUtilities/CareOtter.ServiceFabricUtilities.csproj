@@ -114,7 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actors\ActorFactory.cs" />
-    <Compile Include="Actors\HealthCareStatefulActorBase.cs" />
+    <Compile Include="Actors\CareOtterStatefulActorBase.cs" />
     <Compile Include="AsyncEnumerable\Enumerators\AsyncSelectEnumerator.cs" />
     <Compile Include="AsyncEnumerable\Enumerators\AsyncSelectManyEnumerator.cs" />
     <Compile Include="AsyncEnumerable\Enumerators\AsyncSkipWhileEnumerator.cs" />
@@ -161,10 +161,10 @@
     <Compile Include="Services\Extensions\ReliableDictionaryExtensions.cs" />
     <Compile Include="Services\Extensions\ReliableQueueExtensions.cs" />
     <Compile Include="ServiceActivation\FabricServiceActivator.cs" />
-    <Compile Include="Services\HealthCareStatefulServiceBase.cs" />
-    <Compile Include="Services\HealthCareStatelessServiceBase.cs" />
-    <Compile Include="Services\IHealthCareServiceProxyFactory.cs" />
-    <Compile Include="Services\HealthCareServiceProxyFactory.cs" />
+    <Compile Include="Services\CareOtterStatefulServiceBase.cs" />
+    <Compile Include="Services\CareOtterStatelessServiceBase.cs" />
+    <Compile Include="Services\ICareOtterServiceProxyFactory.cs" />
+    <Compile Include="Services\CareOtterServiceProxyFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

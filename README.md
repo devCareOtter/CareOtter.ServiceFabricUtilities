@@ -1,21 +1,8 @@
 ##CareOtter.ServiceFabricUtilities
 ---
 
-Service fabric utilities is a collection of small helper classes that aid in the development and usage of services and actors in Microsoft Service Fabric.
+Service Fabric Utilities is a library for aiding with development on Service Fabric used internally at Care Otter. The main features are linq-like queries for AsyncEnumerable, activating and deactivating services, sending large data from service to service in a paged manner, and unit testing services. 
 
-####AsyncEnumerable
-
-A collection of linq like async enumerators for usage with reliable state. 
-
-####Observable
-
-Allows for push based notifications for services in an IObserver like pattern.
-
-####Service Activation
-
-Wrapper and interface for easily creating & deleting services, as well as injecting and mocking that behavior.
-
-####Service base classes
-
-Base classes providing common functionality for things like paging, Enumerable extensions, and injectability.
+####Contributing
+All contributions are welcome. Create a pull request and a maintainer will check and verify your changes. Please include unit tests for any new or modified features. 
 
