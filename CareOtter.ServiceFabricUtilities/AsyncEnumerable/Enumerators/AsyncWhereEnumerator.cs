@@ -24,7 +24,8 @@ namespace CareOtter.ServiceFabricUtilities.AsyncEnumerable.Enumerators
 
         public async Task<bool> MoveNextAsync(CancellationToken cancellationToken)
         {
-            await _parentEnumerator.MoveNextAsync(cancellationToken);
+            if (!await _parentEnumerator.MoveNextAsync(cancellationToken) || cancellationToken.IsCancellationRequested)
+                return false;
             while (!_whereFunc(_parentEnumerator.Current)) //while the where func doesn't pass keep moving on
             {
                 if (!(await _parentEnumerator.MoveNextAsync(cancellationToken).ConfigureAwait(false))) //if the parent runs out, fail
