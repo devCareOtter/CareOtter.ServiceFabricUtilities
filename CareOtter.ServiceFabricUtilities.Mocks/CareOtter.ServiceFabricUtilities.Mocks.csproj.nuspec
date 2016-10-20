@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CareOtter.ServiceFabricUtilities.Mocks</id>
+    <version>2.3.301-prerelease</version>
+    <authors>CareOtter</authors>
+    <owners>CareOtter</owners>
+    <projectUrl>https://github.com/devCareOtter/CareOtter.ServiceFabricUtilities</projectUrl>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Helper classes and mock boilerplate for unit testing Service Fabric services and actors.</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>ServiceFabric</tags>
+    <dependencies>
+      <dependency id="CareOtter.ServiceFabricUtilities" version="2.3.301-prerelease" />
+      <dependency id="Microsoft.ServiceFabric" version="5.3.301" />
+      <dependency id="Microsoft.ServiceFabric.Actors" version="2.3.301" />
+      <dependency id="Microsoft.ServiceFabric.Data" version="2.3.301" />
+      <dependency id="Microsoft.ServiceFabric.Services" version="2.3.301" />
+      <dependency id="Newtonsoft.Json" version="[9,10)" />
+      <dependency id="Nitro.AsyncEx" version="[3,4)" />
+      <dependency id="Unity" version="[4,5)" />
+    </dependencies>
+  </metadata>
+</package>

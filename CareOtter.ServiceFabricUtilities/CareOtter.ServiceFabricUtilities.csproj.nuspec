@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CareOtter.ServiceFabricUtilities</id>
+    <version>2.3.301-prerelease</version>
+    <authors>CareOtter</authors>
+    <owners>CareOtter</owners>
+    <projectUrl>https://github.com/devCareOtter/CareOtter.ServiceFabricUtilities</projectUrl>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Core functionality of CareOtter's Service Fabric utility library.</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>ServiceFabric</tags>
+    <dependencies>
+      <dependency id="Microsoft.ServiceFabric" version="5.3.301" />
+      <dependency id="Microsoft.ServiceFabric.Actors" version="2.3.301" />
+      <dependency id="Microsoft.ServiceFabric.Data" version="2.3.301" />
+      <dependency id="Microsoft.ServiceFabric.Services" version="2.3.301" />
+    </dependencies>
+  </metadata>
+</package>
