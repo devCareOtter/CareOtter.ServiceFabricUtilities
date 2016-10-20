@@ -6,7 +6,9 @@ namespace CareOtter.ServiceFabricUtilities.Actors
 {
     public class CareOtterStatefulActorBase : Actor
     {
-        
+     
+        public CareOtterStatefulActorBase(ActorService service, ActorId id) : base(service, id) { }
+           
         public bool TryGetReminder(string reminderName, out IActorReminder reminder)
         {
             try

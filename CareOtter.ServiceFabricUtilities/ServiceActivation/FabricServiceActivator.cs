@@ -82,9 +82,9 @@ namespace CareOtter.ServiceFabricUtilities.ServiceActivation
             return (await RefreshKnownServices(applicationName)).Contains(serviceUri);
         }
 
-        private async Task DeleteServiceInternalAsync(Uri applicationName, Uri serviceUri)
+        private Task DeleteServiceInternalAsync(Uri applicationName, Uri serviceUri)
         {
-            await fabricClient.ServiceManager.DeleteServiceAsync(serviceUri);   
+            return fabricClient.ServiceManager.DeleteServiceAsync(new DeleteServiceDescription(serviceUri));
         }
         
         /// <summary>

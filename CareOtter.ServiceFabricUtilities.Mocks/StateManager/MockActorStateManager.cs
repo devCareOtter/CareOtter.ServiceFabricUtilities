@@ -115,9 +115,15 @@ namespace CareOtter.ServiceFabricUtilities.Mocks.StateManager
             return Task.FromResult<IEnumerable<string>>(_stateDict.Keys);
         }
 
+        //TODO: Implement these
         public Task ClearCacheAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
-            throw new NotImplementedException();
+            return Task.FromResult(true);
+        }
+
+        public Task SaveStateAsync(CancellationToken cancellationToken = new CancellationToken())
+        {
+            return Task.FromResult(true);
         }
     }
 }
